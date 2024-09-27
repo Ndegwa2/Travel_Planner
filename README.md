@@ -18,32 +18,10 @@ Welcome to the Travel Planner CLI! This command-line application helps users pla
 1. Clone this repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ndegwa2/Travel_Planner
 
-Here's a sample README.md file in Markdown format for your Travel Planner project:
 
-markdown
-Copy code
-# Travel Planner CLI
 
-Welcome to the Travel Planner CLI! This command-line application helps users plan their travels by managing itineraries and destinations. Users can create, read, update, and delete itineraries and their associated destinations.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Directory Structure](#directory-structure)
-- [Models](#models)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone <repository-url>
 Navigate to the project directory:
 
 bash
