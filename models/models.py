@@ -43,6 +43,8 @@ class Destination(Base):
     itinerary_id = Column(Integer, ForeignKey('itineraries.id'), nullable=False)
 
     itinerary = relationship('Itinerary', back_populates='destinations')
+    __table_args__ = {'extend_existing': True}
+    
 
     def __repr__(self):
         return f'<Destination {self.name}>'
