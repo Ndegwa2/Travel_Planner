@@ -1,0 +1,91 @@
+Generic single-database configuration.
+# Travel Planner CLI
+
+Welcome to the Travel Planner CLI! This command-line application helps users plan their travels by managing itineraries and destinations. Users can create, read, update, and delete itineraries and their associated destinations.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Directory Structure](#directory-structure)
+- [Models](#models)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/Ndegwa2/Travel_Planner
+
+
+
+Navigate to the project directory:
+
+bash
+Copy code
+cd travel_planner
+Install dependencies using Pipenv:
+
+bash
+Copy code
+pipenv install
+Activate the Pipenv shell:
+
+bash
+Copy code
+pipenv shell
+Set up the database:
+
+bash
+Copy code
+cd lib/db
+alembic init migrations
+Edit alembic.ini to set your database URL and run:
+
+bash
+Copy code
+alembic upgrade head
+Usage
+To start the Travel Planner CLI, run:
+
+bash
+Copy code
+python lib/cli.py
+Follow the prompts to create and manage your travel itineraries and destinations.
+
+Features
+User authentication to secure user data
+Create, update, and delete itineraries
+Add and remove destinations from itineraries
+View all itineraries and associated destinations
+Database seeding for test data using Faker
+Directory Structure
+bash
+Copy code
+.
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+└── lib
+    ├── cli.py          # Main entry point for the CLI
+    ├── db
+    │   ├── models.py   # Database models for users, itineraries, and destinations
+    │   └── seed.py     # Script to seed the database with test data
+    ├── debug.py        # Debugging tools
+    └── helpers.py      # Helper functions for CLI operations
+Models
+The application uses SQLAlchemy ORM for database interactions. The following models are defined:
+
+User: Represents users with attributes for username, email, and password.
+Itinerary: Represents travel itineraries, linked to users.
+Destination: Represents travel destinations, linked to itineraries.
+For detailed information about each model, see lib/db/models.py.
+
+Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+License
+This project  is licensed under the MIT License. See the LICENSE file for more details.
