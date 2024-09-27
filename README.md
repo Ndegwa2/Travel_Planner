@@ -1,4 +1,4 @@
-eneric single-database configuration.
+Generic single-database configuration.
 # Travel Planner CLI
 
 Welcome to the Travel Planner CLI! This command-line application helps users plan their travels by managing itineraries and destinations. Users can create, read, update, and delete itineraries and their associated destinations.
